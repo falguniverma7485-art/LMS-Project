@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f7ff;
+    color: #27233a;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 18px 7%;
+    background: #ffffff;
+    color: #27233a;
+    border-bottom: 1px solid #e8e4ff;
+    box-shadow: 0 4px 18px rgba(104, 69, 245, 0.08);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #6845f5;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 9px 14px;
+    color: #3a3550;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background: #6845f5;
+    color: #ffffff;
+}
+
+.container {
+    width: 86%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-header {
+    padding: 45px 0 25px;
+}
+
+.page-header h1 {
+    margin-bottom: 5px;
+    font-size: 2rem;
+    color: #25213a;
+}
+
+.page-header p {
+    color: #756f8c;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    width: 86%;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+.stat-card {
+    flex: 1;
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #ece9ff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(104, 69, 245, 0.08);
+}
+
+.stat-card h3 {
+    margin-bottom: 5px;
+    color: #756f8c;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.stat-card span {
+    color: #6845f5;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.assignment-section,
+.progress-container {
+    width: 86%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    color: #25213a;
+    font-size: 1.4rem;
+}
+
+.assignment-card {
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 26px;
+    background: #ffffff;
+    border: 1px solid #ece9ff;
+    border-left: 5px solid #6845f5;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(104, 69, 245, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.assignment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(104, 69, 245, 0.14);
+}
+
+.assignment-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.assignment-header h2 {
+    font-size: 1.3rem;
+    color: #25213a;
+}
+
+.assignment-info p {
+    margin: 6px 0;
+    color: #756f8c;
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 13px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.submitted {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.pending {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.overdue {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.evaluated {
+    background: #ede9fe;
+    color: #5b3fd1;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #ebe8f7;
+}
+
+.marks {
+    color: #40395a;
+    font-weight: 700;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #6845f5;
+    color: #ffffff;
+    border: 0;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background: #5938e6;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(104, 69, 245, 0.22);
+}
+
+.btn-secondary {
+    background: #9258f7;
+}
+
+.btn-secondary:hover {
+    background: #7d45e9;
+}
+
+.details-card,
+.submission-card,
+.evaluation-card {
+    background: #ffffff;
+    border: 1px solid #ece9ff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(104, 69, 245, 0.08);
+}
+
+.details-card {
+    width: 75%;
+    margin: 20px auto 50px;
+    padding: 36px;
+}
+
+.details-card h2 {
+    margin-bottom: 16px;
+    color: #25213a;
+}
+
+.details-card h3 {
+    margin: 26px 0 10px;
+    color: #6845f5;
+}
+
+.details-card p {
+    margin-bottom: 8px;
+    color: #5f5975;
+}
+
+.details-card ul {
+    padding-left: 25px;
+    color: #5f5975;
+}
+
+.assignment-meta {
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+    padding: 18px;
+    background: #faf9ff;
+    border: 1px solid #eeeaff;
+    border-radius: 16px;
+}
+
+.assignment-meta div {
+    flex: 1;
+}
+
+.assignment-meta strong {
+    display: block;
+    color: #40395a;
+}
+
+.assignment-meta span {
+    color: #756f8c;
+}
+
+.submission-card {
+    width: 65%;
+    margin: 30px auto 50px;
+    padding: 36px;
+}
+
+.submission-card label {
+    display: block;
+    margin-bottom: 8px;
+    color: #40395a;
+    font-weight: 700;
+}
+
+.file-box {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 25px;
+    background: #faf9ff;
+    border: 2px dashed #b9adf8;
+    border-radius: 16px;
+}
+
+.file-box input {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: #40395a;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    background: #ffffff;
+    color: #302b46;
+    border: 1px solid #d9d4f0;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #6845f5;
+    box-shadow: 0 0 0 4px rgba(104, 69, 245, 0.12);
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px 14px;
+    background: #ffffff;
+    color: #302b46;
+    border: 1px solid #d9d4f0;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    resize: vertical;
+}
+
+.evaluation-card {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto 60px;
+    padding: 36px;
+}
+
+.evaluation-card h1,
+.evaluation-card h2 {
+    color: #25213a;
+}
+
+.evaluation-card h1 {
+    margin-bottom: 8px;
+    font-size: 1.85rem;
+}
+
+.evaluation-card h2 {
+    margin: 38px 0 8px;
+    font-size: 1.35rem;
+}
+
+.evaluation-table-wrap {
+    width: 100%;
+    margin-top: 22px;
+    overflow-x: auto;
+    border: 1px solid #ece9ff;
+    border-radius: 16px;
+}
+
+.evaluation-table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.evaluation-table th,
+.evaluation-table td {
+    padding: 17px 16px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #eeeaff;
+}
+
+.evaluation-table th {
+    background: #faf9ff;
+    color: #40395a;
+    font-size: 0.92rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.evaluation-table td {
+    color: #756f8c;
+    font-size: 0.95rem;
+}
+
+.evaluation-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.evaluation-table tbody tr:hover {
+    background: #fbfaff;
+}
+
+.evaluation-form {
+    margin-top: 32px;
+    padding-top: 8px;
+}
+
+.evaluation-form .form-group {
+    margin-bottom: 22px;
+}
+
+.evaluation-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #40395a;
+    font-weight: 700;
+}
+
+.evaluation-form input,
+.evaluation-form textarea,
+.evaluation-form select {
+    width: 100%;
+    padding: 13px 14px;
+    background: #ffffff;
+    color: #302b46;
+    border: 1px solid #d9d4f0;
+    border-radius: 12px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.evaluation-form input:focus,
+.evaluation-form textarea:focus,
+.evaluation-form select:focus {
+    border-color: #6845f5;
+    box-shadow: 0 0 0 4px rgba(104, 69, 245, 0.12);
+}
+
+.evaluation-form textarea {
+    min-height: 135px;
+    resize: vertical;
+}
+
+.evaluation-form .btn {
+    padding: 11px 22px;
+    font-weight: 700;
+    box-shadow: 0 6px 14px rgba(104, 69, 245, 0.16);
+}
+
+.action-btn {
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.evaluation-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 22px 0 28px;
+}
+
+.evaluation-summary-card {
+    padding: 18px;
+    background: #faf9ff;
+    border: 1px solid #ece9ff;
+    border-radius: 16px;
+}
+
+.evaluation-summary-card span {
+    display: block;
+    margin-bottom: 5px;
+    color: #756f8c;
+    font-size: 0.82rem;
+}
+
+.evaluation-summary-card strong {
+    color: #40395a;
+    font-size: 1.1rem;
+}
+
+.progress-overview {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.progress-card {
+    flex: 1;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #ece9ff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(104, 69, 245, 0.08);
+    text-align: center;
+}
+
+.progress-card h3 {
+    margin-bottom: 10px;
+    color: #756f8c;
+}
+
+.progress-number {
+    color: #6845f5;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.course-progress {
+    margin-bottom: 20px;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #ece9ff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(104, 69, 245, 0.08);
+}
+
+.course-progress-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    overflow: hidden;
+    background: #eeeaff;
+    border-radius: 20px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6845f5, #9258f7);
+    border-radius: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background: #ffffff;
+    color: #756f8c;
+    border-top: 1px solid #e8e4ff;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stats,
+    .progress-overview {
+        flex-direction: column;
+    }
+
+    .assignment-card,
+    .details-card,
+    .submission-card,
+    .evaluation-card {
+        width: 100%;
+    }
+
+    .assignment-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .assignment-header,
+    .card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .evaluation-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .evaluation-card {
+        padding: 24px 18px;
+    }
+}
+
+.assignment-detail {
+    display: none;
+}
+
+.assignment-detail:target {
+    display: block;
+}
