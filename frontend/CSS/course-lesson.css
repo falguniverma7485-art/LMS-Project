@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f0ff;
+    color: #24213a;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0 4px 20px rgba(60, 40, 120, 0.08);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #6d28d9;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #4c1d95;
+    font-weight: 500;
+}
+
+
+/* =========================
+   COMMON
+========================= */
+
+.courses-page,
+.course-detail-page,
+.lesson-page {
+    width: 86%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header {
+    text-align: center;
+    padding: 65px 0 40px;
+}
+
+.page-header h1 {
+    font-size: 38px;
+    color: #4c1d95;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #6b6780;
+}
+
+
+/* =========================
+   COURSE CARDS
+========================= */
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    padding-bottom: 60px;
+}
+
+.course-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0 12px 35px rgba(70, 40, 130, 0.12);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(70, 40, 130, 0.18);
+}
+
+.course-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.course-content {
+    padding: 24px;
+}
+
+.course-category {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #ede9fe;
+    color: #6d28d9;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.course-content h2 {
+    font-size: 21px;
+    margin: 14px 0 10px;
+}
+
+.course-content p {
+    color: #6b6780;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   COURSE INFO
+========================= */
+
+.course-info {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+
+    margin: 18px 0;
+
+    color: #625b78;
+    font-size: 13px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 11px 20px;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #4f46e5
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 70, 200, 0.3);
+}
+
+
+/* =========================
+   COURSE DETAIL
+========================= */
+
+.course-hero {
+    margin-top: 45px;
+    padding: 55px;
+
+    border-radius: 24px;
+
+    background: linear-gradient(
+        135deg,
+        #6d28d9,
+        #4f46e5
+    );
+
+    color: white;
+
+    box-shadow: 0 15px 40px rgba(76, 29, 149, 0.2);
+}
+
+.course-hero .course-category {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.course-hero h1 {
+    font-size: 40px;
+    margin: 18px 0 12px;
+}
+
+.course-hero p {
+    max-width: 700px;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+.course-hero .course-info {
+    color: white;
+}
+
+
+/* =========================
+   COURSE CONTENT
+========================= */
+
+.course-content-section {
+    padding: 45px 0 70px;
+}
+
+.course-description {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(70, 40, 130, 0.08);
+}
+
+.course-description h2,
+.lessons-section h2 {
+    color: #4c1d95;
+    margin-bottom: 15px;
+}
+
+.course-description p {
+    color: #66627a;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   LESSONS
+========================= */
+
+.lessons-section {
+    margin-top: 35px;
+}
+
+.lesson-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.lesson-card {
+    background: white;
+
+    padding: 22px 25px;
+
+    border-radius: 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 8px 25px rgba(70, 40, 130, 0.08);
+}
+
+.lesson-card span {
+    font-size: 13px;
+    color: #7c3aed;
+    font-weight: 600;
+}
+
+.lesson-card h3 {
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+
+/* =========================
+   LESSON PAGE
+========================= */
+
+.lesson-page {
+    max-width: 900px;
+}
+
+.lesson-header {
+    text-align: center;
+    padding: 60px 0 35px;
+}
+
+.lesson-header h1 {
+    font-size: 38px;
+    color: #4c1d95;
+    margin: 15px 0 10px;
+}
+
+.lesson-header p {
+    color: #6b6780;
+}
+
+
+.lesson-content {
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 22px;
+
+    box-shadow: 0 12px 35px rgba(70, 40, 130, 0.1);
+
+    margin-bottom: 60px;
+}
+
+.lesson-content h2 {
+    color: #4c1d95;
+    margin-bottom: 12px;
+    margin-top: 28px;
+}
+
+.lesson-content h2:first-child {
+    margin-top: 0;
+}
+
+.lesson-content p {
+    color: #625b78;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   CODE BOX
+========================= */
+
+.code-box {
+    background: #1e1b2e;
+
+    color: #eee;
+
+    padding: 22px;
+
+    border-radius: 14px;
+
+    margin-top: 20px;
+
+    overflow-x: auto;
+}
+
+.code-box pre {
+    font-family: Consolas, monospace;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   LESSON NAVIGATION
+========================= */
+
+.lesson-navigation {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secondary-btn {
+    padding: 11px 20px;
+
+    border-radius: 12px;
+
+    border: 1px solid #c4b5fd;
+
+    color: #6d28d9;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .courses-page,
+    .course-detail-page,
+    .lesson-page {
+        width: 92%;
+    }
+
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header h1,
+    .lesson-header h1 {
+        font-size: 30px;
+    }
+
+    .course-hero {
+        padding: 30px;
+    }
+
+    .course-hero h1 {
+        font-size: 30px;
+    }
+
+    .lesson-content {
+        padding: 25px;
+    }
+
+    .lesson-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+
+}
