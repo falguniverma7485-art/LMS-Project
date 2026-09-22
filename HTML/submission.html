@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Assignment | LMS</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">LMS</div>
+
+            <nav>
+                <a href="assignment.html" class="active">Assignments</a>
+                <a href="progress.html">Progress</a>
+                <a href="teacher-login.html">Teacher Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Submit Assignment</h1>
+            <p>Upload your assignment for evaluation.</p>
+        </div>
+    </section>
+
+    <div class="submission-card">
+        <h2>HTML Assignment</h2>
+
+        <br>
+
+        <form>
+
+            <div class="form-group">
+                <label>Student Name</label>
+                <input type="text" value="Gaurav Kumar" readonly>
+            </div>
+
+            <div class="form-group">
+                <label>Assignment</label>
+                <input type="text" value="HTML Assignment" readonly>
+            </div>
+
+            <div class="form-group">
+                <label>Upload Assignment</label>
+
+                <div class="file-box">
+                    <input type="file" accept=".pdf,.zip,.doc,.docx">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Comments</label>
+                <textarea class="textarea" placeholder="Write any comments for the instructor..."></textarea>
+            </div>
+
+            <p>
+                <strong>Due Date:</strong> 20-09-2026
+            </p>
+
+            <br>
+
+            <button type="submit" class="btn">Submit Assignment</button>
+            <a href="assignment.html" class="btn btn-secondary">Cancel</a>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>LMS Assignment Management System</p>
+    </footer>
+
+
+</body>
+
+</html>
