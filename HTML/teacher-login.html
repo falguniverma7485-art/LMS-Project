@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Login | LMS</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">LMS</div>
+
+            <nav>
+                <a href="teacher-login.html" class="active">Teacher Login</a>
+                <a href="assignment.html">Student View</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Teacher Login</h1>
+            <p>Login to manage assignments and evaluate student submissions.</p>
+        </div>
+    </section>
+
+    <div class="submission-card">
+        <form action="teacher-dashboard.html">
+
+            <div class="form-group">
+                <label>Teacher Email</label>
+                <input
+                    type="email"
+                    placeholder="teacher@example.com"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input
+                    type="password"
+                    placeholder="Enter password"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>LMS Assignment Management System</p>
+    </footer>
+
+
+</body>
+
+</html>

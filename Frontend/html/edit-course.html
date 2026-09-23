@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Course Content - LMS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h2>LMS Instructor Module</h2>
+        <div>
+            <a href="instructor-dashboard.html">Dashboard</a>
+            <a href="manage-courses.html">My Courses</a>
+            <a href="instructor-profile.html">Profile</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Edit Course & Content</h1>
+        <form style="background: #fff; padding: 20px; border-radius: 8px;">
+            <div class="form-group">
+                <label>Course Title:</label>
+                <input type="text" value="Web Development Basics">
+            </div>
+            <div class="form-group">
+                <label>Course Overview & Description:</label>
+                <textarea rows="4">Comprehensive introduction to HTML, CSS, JavaScript, and MERN stack fundamentals.</textarea>
+            </div>
+            <div class="form-group">
+                <label>Instructor Content Notes / Curriculum Updates:</label>
+                <textarea rows="5">Module 1: HTML5 Tags&#10;Module 2: CSS Flexbox & Grid&#10;Module 3: JavaScript DOM Manipulation</textarea>
+            </div>
+            <button type="submit" class="btn">Update Course Content</button>
+            <a href="manage-courses.html" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>
