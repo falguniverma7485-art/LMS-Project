@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Instructor Login | Learning Management System</title>
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f4f1ff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-container {
+            width: 420px;
+            max-width: 90%;
+            background: white;
+            padding: 40px;
+            border-radius: 22px;
+            box-shadow: 0 15px 45px rgba(80, 50, 150, 0.12);
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: #6d4aff;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #77728f;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 8px;
+            color: #24213d;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ddd8f0;
+            border-radius: 12px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #6d4aff;
+        }
+
+        button {
+            width: 100%;
+            border: none;
+            padding: 14px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #6d4aff, #8b5cf6);
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 22px;
+        }
+
+        .back-link a {
+            color: #6d4aff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <div class="logo">
+        Learning Management System
+    </div>
+
+    <p class="subtitle">
+        Instructor Portal
+    </p>
+
+    <h1>
+        Instructor Login
+    </h1>
+
+    <p class="subtitle">
+        Welcome back, Instructor!
+    </p>
+
+
+    <form action="instructor-dashboard.html">
+
+        <div class="form-group">
+
+            <label for="email">
+                Instructor Email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter instructor email"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="password">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+                required
+            >
+
+        </div>
+
+
+        <button type="submit">
+            Login as Instructor →
+        </button>
+
+    </form>
+
+
+    <div class="back-link">
+
+        <a href="login.html">
+            ← Back to Student Login
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
